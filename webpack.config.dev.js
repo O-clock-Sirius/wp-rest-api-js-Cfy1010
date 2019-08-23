@@ -123,6 +123,9 @@ let config = {
         reload: false
       }
     ),
+    new webpack.ProvidePlugin({
+      axios: 'axios'
+    }),
   ]
 };
 

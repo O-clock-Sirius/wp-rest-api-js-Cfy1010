@@ -74,6 +74,9 @@ let config = {
         transformPath: (targetPath) => targetPath.replace(/^app\/assets\//, '')
       }
     ]),
+    new webpack.ProvidePlugin({
+      axios: 'axios'
+    }),
   ]
 };
 
